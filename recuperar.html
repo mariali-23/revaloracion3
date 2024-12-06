@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuperar Contraseña</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="logo-container">
+        <img src="logo.png" alt="Logo" class="logo">
+    </div>
+    <div class="container">
+        <h2>Recuperar Contraseña</h2>
+        <form id="passwordRecoveryForm">
+            <div class="form-group">
+                <label for="username">Usuario:</label>
+                <input type="text" id="username" required>
+                <small id="usernameError" class="error-message"></small>
+            </div>
+            <div class="form-group">
+                <label for="captcha">Captcha:</label>
+                <input type="text" id="captcha" required>
+               <center><button type="button" id="generateCaptcha">Token</button></center> 
+                <center><span id="captchaText"></span></center>
+                <small id="captchaError" class="error-message"></small>
+            </div>
+            <div class="form-group">
+                <label for="newPassword">Nueva Contraseña:</label>
+                <input type="password" id="newPassword" required>
+                <small id="newPasswordError" class="error-message"></small>
+            </div>
+            <button type="submit">Actualizar Contraseña</button>
+        </form>
+    </div>
+    <script src="recuperar.js"></script>
+</body>
+</html>

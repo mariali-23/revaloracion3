@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Books Logo">
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Buscar">
+            <button class="close-btn">X</button>
+        </div>
+        <div class="header-buttons">
+            <button>Favoritos</button>
+            <div class="image-space">
+                <img src="Cart.png" alt="Imagen derecha" class="cart-image">
+            </div>
+            <div class="icons">
+                <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                <a href="#"><i class="fas fa-user"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <nav class="main-nav">
+        <button>Recomendaciones</button>
+        <button>Sucursales</button>
+        <button>Ebooks</button>
+        <button>Ayuda</button>
+    </nav>
+
+    <main>
+        <div class="product-container">
+            <div class="product">
+                <img src="zapato1.jpg" alt="Producto 1" class="product-image">
+                <h3>Tenis de caballero</h3>
+                <p class="description">Tenis de caballero comodos, 
+                    en color blanco, 
+                    diferentes tallas</p>
+                <button class="add-to-cart">Agregar al carrito</button>
+                <button class="add-to-favorites">Agregar a favoritos</button>
+            </div>
+            <div class="product">
+                <img src="zapato2.jpg" alt="Producto 2" class="product-image">
+                <h3>Tacones para dama</h3>
+                <p class="description">Tacones para dama, 
+                    color camello, 
+                    diferentes tallas.</p>
+                <button class="add-to-cart">Agregar al carrito</button>
+                <button class="add-to-favorites">Agregar a favoritos</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+</html>
